@@ -56,7 +56,7 @@ class PrivateTagsApiTests(TestCase):
             'password'
         )
         Tag.objects.create(user=user2, name='Fruity')
-        tag = Tag.objects.create(user=self.user, name='Confort Food')
+        tag = Tag.objects.create(user=self.user, name='Comfort Food')
 
         res = self.client.get(TAGS_URL)
 
